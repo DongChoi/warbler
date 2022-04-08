@@ -116,7 +116,6 @@ class MessageViewTestCase(TestCase):
             db.session.add(test_message)
             db.session.commit()
 
-        test_message2_id = test_message2.id
         resp = c.post(f"/messages/{test_message.id}/delete", follow_redirects=True)
         html = resp.get_data(as_text = True)
         breakpoint()
