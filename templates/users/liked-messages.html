@@ -21,7 +21,7 @@
           </div>
           <!-- like and unlike  -->
           <!-- list of warbles to import into other code -->
-          <a href="#">
+          <a href="#" class="toggle-like-btn">
             {% if message not in g.user.messages %}
             {% if message not in g.user.liked_messages %}
             <form action="/users/liked/{{ message.id }}" method="POST">

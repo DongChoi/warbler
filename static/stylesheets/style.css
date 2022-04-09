@@ -550,18 +550,14 @@ p.card-bio {
 }
 
 
-/* Toggle Like Button */
-/* 
-.toggle-like-btn{
-  display: flex;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-} */
+.toggle-like-btn {
+  margin-top: auto;
+  margin-left: auto;
+}
 
 .fa-star {
   border: none;
-  background-color: none;
-  position: absolute;
-  margin-bottom: 0px;
+  font-size: 20px;
+  background-color: transparent;
 }
+
