@@ -550,6 +550,8 @@ p.card-bio {
 }
 
 
+/* Toggle Like Button */
+
 .toggle-like-btn {
   margin-top: auto;
   margin-left: auto;
@@ -560,4 +562,3 @@ p.card-bio {
   font-size: 20px;
   background-color: transparent;
 }
-
