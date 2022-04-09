@@ -119,11 +119,12 @@ class UserModelTestCase(TestCase):
 
         db.session.commit()
 
+        test_user_db = User.query.filter(User.username == "testuser3").one_or_none()
 
-        # self.assertIn(test_user, User.query.all()) too expensive
-        # test if username is equal to username I passed 
-        # python string function 
-        self.assertNotIn("test4", User.query.all())
+        self.assertEqual(test_user_db.email, "test3@test.com")
+        self.assertEqual(test_user_db.username, "testuser3")
+        self.assertEqual(test_user_db.password.startswith('$2b$12$'), True)
+        self.assertNotEqual("test4", User.query.get(test_user.id).username)
 
     def test_unique_signup(self):
         """ Test for sign up with already existing values """
@@ -139,7 +140,7 @@ class UserModelTestCase(TestCase):
         """ Test for sign up with an unfilled not nullable field """
 
         with self.assertRaises(IntegrityError):
-            signup_with_no_img_url = User.signup(email="test4@test.com",
+            signup_with_no_username = User.signup(email="test4@test.com",
                             username=None,
                             password="HASHED_PASSWORD",
                             image_url=""

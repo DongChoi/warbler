@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
   <div class="row">
-
+    <!-- testing for homepage -->
     <aside class="col-md-4 col-lg-3 col-sm-12" id="home-aside">
       <div class="card user-card">
         <div>
@@ -58,7 +58,7 @@
               <p>{{ msg.text }}</p>
             </div>
             <!-- like and unlike  -->
-              <a href="#">
+              <a href="#" class="toggle-like-btn">
                 {% if msg not in g.user.messages %}
                   {% if msg not in g.user.liked_messages %}
                   <form action="/users/liked/{{ msg.id }}" method="POST">

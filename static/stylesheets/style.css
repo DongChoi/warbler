@@ -548,3 +548,20 @@ p.card-bio {
 .message-404 input {
   flex: 1;
 }
+
+
+/* Toggle Like Button */
+/* 
+.toggle-like-btn{
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+} */
+
+.fa-star {
+  border: none;
+  background-color: none;
+  position: absolute;
+  margin-bottom: 0px;
+}
