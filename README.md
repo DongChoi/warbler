@@ -19,12 +19,12 @@ Warbler is a Twitter clone project created using Flask, Jinja, SQLAlchemy, Postg
 
 
 ### Technologies used
-Flask
-Jinja
-SQLAlchemy
-PostgreSQL
-RDS
-Elastic Beanstalk
+- Flask
+- Jinja
+- SQLAlchemy
+- PostgreSQL
+- RDS
+- Elastic Beanstalk
 
 
 
